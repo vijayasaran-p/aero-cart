@@ -1,0 +1,11 @@
+{
+  "client": {
+    "source": "frontend"
+  },
+  "functions": {
+    "targets": [
+      "aerocart_backend"
+    ],
+    "source": "backend"
+  }
+}

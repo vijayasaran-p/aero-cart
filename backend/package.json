@@ -1,0 +1,10 @@
+{
+  "name": "aerocart-backend",
+  "version": "1.0.0",
+  "description": "Serverless Advanced I/O backend for AeroCart quick-commerce platform on Zoho Catalyst",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.19.2",
+    "zcatalyst-sdk-node": "^3.0.0"
+  }
+}
