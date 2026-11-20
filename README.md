@@ -1,5 +1,7 @@
 # AeroCart — Hyper-Local Quick-Commerce Platform
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit_Platform-059669?style=for-the-badge&logo=googlechrome&logoColor=white)](https://project-rainfall-60076287696.development.catalystserverless.in/app/)
+
 [![Node.js](https://img.shields.io/badge/Node.js-18-339933.svg?logo=node.js)](https://nodejs.org/)
 [![Express.js](https://img.shields.io/badge/Express.js-4.19-black.svg?logo=express)](https://expressjs.com/)
 [![Zoho Catalyst](https://img.shields.io/badge/Zoho_Catalyst-Serverless_Advanced_I%2FO-red.svg)](https://catalyst.zoho.com/)
