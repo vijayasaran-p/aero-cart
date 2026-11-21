@@ -1,5 +1,6 @@
 'use strict';
 const express = require('express');
+const crypto = require('crypto');
 const catalyst = require('zcatalyst-sdk-node');
 
 const app = express();
@@ -21,13 +22,10 @@ function haversineKm(lat1, lng1, lat2, lng2) {
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
-// Simple password hash (XOR with salt – good enough for demo, replace with bcrypt in prod)
+// Cryptographic SHA-256 HMAC password hashing with application-level salt
 function hashPassword(pwd) {
-  let h = 0;
-  for (let i = 0; i < pwd.length; i++) {
-    h = Math.imul(31, h) + pwd.charCodeAt(i) | 0;
-  }
-  return 'h_' + Math.abs(h).toString(16);
+  const salt = 'aerocart_production_salt_sec_2026';
+  return crypto.createHmac('sha256', salt).update(String(pwd)).digest('hex');
 }
 
 function sendError(res, status, message, tip = '') {
